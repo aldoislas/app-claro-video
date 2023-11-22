@@ -1,6 +1,7 @@
 import PropTypes from "prop-types";
 
 import styles from "./PrimaryButton.module.scss";
+
 export const PrimaryButton = ({ title = "", onClickFunc }) => {
   const handleClick = () => {
     onClickFunc();

@@ -18,8 +18,6 @@ export const EpgModal = ({ openModal = false, onCloseModal }) => {
   const { data: { response } = {}, isLoading, error } = useGetChannelsQuery();
   const { channels = [] } = response || {};
 
-  // console.log(error);
-
   const [selectedEvent, setSelectedEvent] = useState({});
 
   return (
@@ -33,11 +31,15 @@ export const EpgModal = ({ openModal = false, onCloseModal }) => {
       }}
     >
       <div className={styles.container_epg}>
-        <EpgDescription selectedEvent={selectedEvent} />
+        <EpgDescription
+          selectedEvent={selectedEvent}
+          isLoading={isLoading}
+          error={error}
+        />
 
         <EpgOptions />
 
-        {isLoading ? (
+        {isLoading || error ? (
           <EpgScheduleSkeleton />
         ) : (
           <EpgSchedule
