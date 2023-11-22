@@ -1,0 +1,21 @@
+.chanel_sticky {
+  cursor: pointer;
+  width: 233px;
+  height: 115px;
+  color: white;
+  background-color: #1a1a1a;
+  display: flex;
+  flex-flow: row nowrap;
+  justify-content: center;
+  align-items: center;
+  padding: 20px;
+  border-radius: 0px 16px 16px 0px;
+  -webkit-border-radius: 0px 16px 16px 0px;
+  -moz-border-radius: 0px 16px 16px 0px;
+  margin-bottom: 5px;
+
+  p {
+    font-size: 28px;
+    font-weight: 600;
+  }
+}

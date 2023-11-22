@@ -1,0 +1,35 @@
+@import "../../scss/partials/mixins";
+@import "../../scss/partials/variables";
+
+.options {
+  background-color: rgba(0, 0, 0, 0.3) !important;
+  padding: 0px 80px;
+
+  .buttons_container {
+    background-color: rgba(0, 0, 0, 0.3) !important;
+    padding: 0px 20px;
+    height: 100%;
+    display: flex;
+    flex-flow: row nowrap;
+    justify-content: end;
+    align-items: center;
+    button {
+      margin-left: 10px;
+      font-size: 13px;
+      max-width: 144px !important;
+      padding: 10px;
+      height: 40px;
+      font-weight: 700;
+    }
+  }
+}
+
+@include sm-screens640 {
+  .options {
+    padding: 0px 0px;
+    .buttons_container {
+      padding: 0px 10px;
+      justify-content: center;
+    }
+  }
+}

@@ -1,0 +1,17 @@
+@import "./partials/variables";
+
+html,
+body {
+  box-sizing: border-box;
+  height: 100%;
+  font-family: "Roboto";
+  font-size: 14px;
+}
+
+*,
+*:before,
+*:after {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}

@@ -1,0 +1,51 @@
+//! add doots after n lines of text
+@mixin addTextDotsAFterNLines($lines: 1) {
+  display: -webkit-box;
+  -webkit-line-clamp: $lines;
+  -webkit-box-orient: vertical;
+  overflow: hidden;
+  text-overflow: ellipsis;
+}
+
+//! Break points =================================
+
+@mixin sm-screens440() {
+  @media only screen and (max-width: 440px) {
+    @content;
+  }
+}
+
+@mixin sm-screens540() {
+  @media only screen and (max-width: 540px) {
+    @content;
+  }
+}
+
+@mixin sm-screens640() {
+  @media only screen and (max-width: 640px) {
+    @content;
+  }
+}
+
+@mixin md-screens768() {
+  @media only screen and (max-width: 768px) {
+    @content;
+  }
+}
+
+@mixin lg-screens1024() {
+  @media only screen and (max-width: 1024px) {
+    @content;
+  }
+}
+
+@mixin lgx-screens1200() {
+  @media only screen and (max-width: 1200px) {
+    @content;
+  }
+}
+@mixin xl-screens1280() {
+  @media only screen and (max-width: 1280px) {
+    @content;
+  }
+}

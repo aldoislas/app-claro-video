@@ -1,0 +1,39 @@
+@import "../../scss/partials/mixins";
+@import "../../scss/partials/variables";
+
+.description_container {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  background-color: rgba(0, 0, 0, 0.3);
+  .description_event {
+    padding: 38px 25px;
+    color: #fff;
+
+    h1 {
+      font-size: 3rem;
+      margin-bottom: 30px;
+    }
+
+    p {
+      margin-bottom: 10px;
+      font-size: 1.5rem;
+      font-weight: 700;
+    }
+  }
+}
+
+@include lg-screens1024 {
+  .description_container {
+    display: grid;
+    grid-template-columns: 1fr;
+  }
+}
+
+@include sm-screens640 {
+  .description_container {
+    padding: 0px 0px;
+    p {
+      @include addTextDotsAFterNLines(3);
+    }
+  }
+}

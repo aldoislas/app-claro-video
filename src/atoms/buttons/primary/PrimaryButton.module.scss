@@ -1,0 +1,15 @@
+@import "../../../scss/partials/variables";
+
+.container_button {
+  height: 48;
+  width: 100%;
+  max-width: 600px;
+  background-color: $grid-content-color;
+  color: $white-color;
+  border-radius: 6px;
+  padding: 30px 0px;
+  text-decoration: none;
+  cursor: pointer;
+  border-color: transparent;
+  font-size: 30px;
+}
