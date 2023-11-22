@@ -1,3 +1,5 @@
+@import "../../scss/partials/variables";
+
 .container {
   display: grid;
   grid-template-columns: repeat(auto-fill, 1fr);
@@ -22,7 +24,7 @@
   position: sticky !important;
   top: 0 !important;
   left: 0 !important;
-  z-index: 100000 !important;
+  z-index: 10000 !important;
   width: 240px;
   display: flex;
   flex-direction: column;
@@ -55,6 +57,7 @@
   display: flex;
   flex-flow: row nowrap;
   height: 120px;
+  z-index: -1 !important;
 }
 
 .sticky_column {
@@ -69,7 +72,7 @@
   width: 233px;
   height: 115px;
   color: white;
-  background-color: #1a1a1a;
+  background-color: $grid-elements-color;
   display: flex;
   flex-flow: row nowrap;
   justify-content: center;
@@ -94,9 +97,9 @@
 .event {
   padding: 15px 20px;
   color: white;
-  background-color: #1a1a1a;
+  background-color: $grid-elements-color;
   width: 330px !important;
-  border: 1px solid #585858;
+  border: 1px solid $grid-elements-border-color;
   display: flex;
   flex-flow: column nowrap;
 
@@ -104,6 +107,6 @@
     margin-top: 10px;
   }
   &:hover {
-    background-color: #44454f;
+    background-color: $grid-elements-hover-color;
   }
 }
